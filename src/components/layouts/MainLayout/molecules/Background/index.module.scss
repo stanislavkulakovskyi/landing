@@ -1,0 +1,55 @@
+@import "../../../../../styles/variables.scss";
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.animation {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(60px);
+}
+
+.bgIllustration {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+}
+
+.plusContainer {
+    position: fixed;
+    z-index: 3;
+    width: 10px;
+    height: 10px;
+}
+
+.plusLine {
+    width: 1px;
+    height: 100%;
+    background-color: $fog;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.plusLine:nth-child(1) {
+    width: 100%;
+    height: 1px;
+}

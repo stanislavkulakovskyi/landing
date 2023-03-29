@@ -1,3 +1,3 @@
-import AnimationBackground from "./AnimationBackground";
+import Background from "./Background";
 
-export { AnimationBackground };
+export { Background };

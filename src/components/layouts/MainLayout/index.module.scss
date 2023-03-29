@@ -6,14 +6,7 @@
     box-sizing: border-box;
 }
 
-.background {
-    min-width: 100vw;
-    min-height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-    position: fixed;
-}
-
-.background::after {
-    content: "";
+.children {
+    position: relative;
+    z-index: 3;
 }

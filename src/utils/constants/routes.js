@@ -4,5 +4,5 @@ import { Main } from "../../components/pages";
 export const ROOT = "/";
 
 export const PUBLIC_ROUTES = {
-  [ROOT]: { element: Main, layout: MainLayout },
+  [ROOT]: { page: Main, layout: MainLayout },
 };

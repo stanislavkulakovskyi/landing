@@ -14,7 +14,7 @@ const Navigation = () => {
     <Router>
       <Routes>
         {Object.keys(PUBLIC_ROUTES).map((routeKey) => {
-          const { element: Element, layout: Layout } = PUBLIC_ROUTES[routeKey];
+          const { page: Page, layout: Layout } = PUBLIC_ROUTES[routeKey];
 
           return (
             <Route
@@ -22,7 +22,7 @@ const Navigation = () => {
               path={routeKey}
               element={
                 <Layout>
-                  <Element />
+                  <Page />
                 </Layout>
               }
             />
