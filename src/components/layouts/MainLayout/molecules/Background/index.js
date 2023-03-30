@@ -2,9 +2,10 @@ import React from "react";
 import Lottie from "lottie-react";
 
 import bgAnimation from "../../../../../assets/lottie/hero_background.json";
-import { PLUS_STYLES_BY_INDEX } from "./constants";
-
 import bgIllustration from "../../../../../assets/images/bg_illustration.png";
+import { PLUS_STYLES_BY_INDEX } from "../../../../../utils/constants/layoutBg";
+
+import { SvgIcon } from "../../../../base";
 
 import styles from "./index.module.scss";
 
@@ -13,19 +14,17 @@ const Background = () => {
     return Array(4)
       .fill(true)
       .map((_, index) => (
-        <div
+        <SvgIcon
           key={`plus-${index}`}
-          className={styles.plusContainer}
+          type="plus"
+          className={styles.plus}
           style={PLUS_STYLES_BY_INDEX[index]}
-        >
-          <div className={styles.plusLine} />
-          <div className={styles.plusLine} />
-        </div>
+        />
       ));
   };
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <Lottie
         animationData={bgAnimation}
         className={styles.animation}
@@ -41,7 +40,7 @@ const Background = () => {
       />
 
       {renderPlusIcons()}
-    </section>
+    </div>
   );
 };
 

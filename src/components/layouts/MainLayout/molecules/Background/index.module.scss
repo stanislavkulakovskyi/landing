@@ -26,30 +26,12 @@
 
 .bgIllustration {
     position: fixed;
-    z-index: 4;
+    z-index: 3;
     top: 0;
     right: 0;
 }
 
-.plusContainer {
+.plus {
     position: fixed;
     z-index: 3;
-    width: 10px;
-    height: 10px;
-}
-
-.plusLine {
-    width: 1px;
-    height: 100%;
-    background-color: $fog;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-}
-
-.plusLine:nth-child(1) {
-    width: 100%;
-    height: 1px;
 }

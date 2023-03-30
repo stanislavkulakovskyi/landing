@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+// FONTS
+@mixin font-orditron-400 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+}
+
+@mixin font-orditron-500 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+}
+
+@mixin font-orditron-600 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+}
+
+@mixin font-orditron-700 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+}
+
+@mixin font-orditron-800 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+}
+
+@mixin font-orditron-900 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 900;
+}
+
+@mixin font-fraunces-100 {
+    font-family: "Fraunces", serif;
+    font-weight: 100;
+}
+
+@mixin font-fraunces-200 {
+    font-family: "Fraunces", serif;
+    font-weight: 200;
+}
+
+@mixin font-fraunces-300 {
+    font-family: "Fraunces", serif;
+    font-weight: 300;
+}
+
+@mixin font-fraunces-400 {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+}
+
+@mixin font-fraunces-500 {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+}
+
+@mixin font-fraunces-600 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+}
+
+@mixin font-fraunces-700 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+@mixin font-fraunces-800 {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+}
+
+@mixin font-fraunces-900 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
