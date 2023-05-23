@@ -1,0 +1,48 @@
+@import '../../../styles/mixins.scss';
+
+.container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 60px 140px 40px 140px;
+  box-sizing: border-box;
+  background: #ffffff59;
+
+  animation: swipe 0.3s;
+}
+
+.page {
+  display: flex;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 2000px;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.title {
+  display: flex;
+  @include font-archivo-900;
+  font-size: 50px;
+  margin-bottom: 70px;
+  -webkit-transform: scaleY(0.8);
+  transform: scaleY(0.8) translateY(-12%);
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

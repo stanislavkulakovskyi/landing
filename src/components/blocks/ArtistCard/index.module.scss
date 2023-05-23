@@ -1,0 +1,162 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.card {
+  width: 300px;
+  height: 300px;
+  background: #000;
+
+  position: relative;
+
+  &:hover .photo:not(:hover) {
+    transform: scale(1);
+  }
+
+  &:hover .name {
+    transform: translateY(-110%) translateX(-50%) scaleY(0.8);
+    -webkit-transform: translateY(-110%) translateX(-50%) scaleY(0.8);
+  }
+
+  &:hover .link_icons {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0%);
+    pointer-events: all;
+  }
+
+  &:hover .links_container {
+    opacity: 1;
+  }
+
+  &:hover .svg_icon {
+    width: max-content;
+    background: #000;
+    
+
+    &:hover {
+      background-color: $lava;
+    }
+
+    &::before {
+      filter: brightness(5);
+      margin-right: 20px;
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      @include font-orditron-700;
+      color: $salt;
+      content: 'MORE';
+    }
+  }
+}
+
+.photo_container {
+  overflow: hidden;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+
+  transform: scale(1.05);
+
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.link {
+  position: absolute;
+  z-index: 3;
+  top: -20px;
+  right: -20px;
+}
+
+.more_icon {
+  transition: all 0.2s ease;
+}
+
+.link_icon {
+  width: 40px;
+  height: 40px;
+
+  filter: brightness(0.8);
+
+  transition: all 0.3s;
+
+  &:hover {
+    filter: brightness(1);
+  }
+}
+
+.links_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(143,143,143,0) 40%, rgba(0,0,0,0.4990589985994398) 80%, rgba(0,0,0,0.7007396708683473) 100%);
+  opacity: 0;
+
+  transition: all 0.3s;
+}
+
+.link_icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  width: 100%;
+  height: 60px;
+  transition: all 0.2s;
+  pointer-events: none;
+
+  opacity: 1;
+}
+
+.name {
+  @include font-archivo-900;
+  color: $salt;
+  font-size: 25px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transition: all 0.2s;
+  -webkit-transform: translateX(-50%) scaleY(0.8);
+  transform: translateX(-50%) scaleY(0.8);
+  width: max-content;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.svg_icon {
+  padding: 20px;
+  background-color: $salt;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: all 0.1s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  &::before {
+    content: url(../../../assets/icons/arrow.svg);
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.1s;
+  }
+}
