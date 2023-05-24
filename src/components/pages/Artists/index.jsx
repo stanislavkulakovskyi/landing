@@ -16,26 +16,28 @@ const photos = [
 
 const Artists = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.page}>
-        <h2 className={styles.title}>BTQ ARTISTS</h2>
-        <div className={styles.list}>
-          {artists.map((artist, i) => {
-            return (
-              <ArtistCard 
-                name={artist.name}
-                photo={photos[i]}
-                link={artist.linktree}
-                spotify={artist.spotify}
-                soundcloud={artist.soundcloud}
-                instagram={artist.instagram}
-                key={artist.id}
-              />
-            )
-          })}
+    <>
+      <div className={styles.container}>
+        <div className={styles.page}>
+          <h2 className={styles.title}>BTQ ARTISTS</h2>
+          <div className={styles.list}>
+            {artists.map((artist, i) => {
+              return (
+                <ArtistCard 
+                  name={artist.name}
+                  photo={photos[i]}
+                  link={artist.linktree}
+                  spotify={artist.spotify}
+                  soundcloud={artist.soundcloud}
+                  instagram={artist.instagram}
+                  key={artist.id}
+                />
+              )
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

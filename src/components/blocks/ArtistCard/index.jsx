@@ -22,20 +22,30 @@ export const ArtistCard = ({ name, photo, link, spotify, soundcloud, instagram }
       </a>
       <div className={styles.links_container}>
         <div className={styles.link_icons}>
-          <a href={spotify} target="_blank" rel="noreferrer">
-            <img
-              className={styles.link_icon}
-              src={spotifyIcon}
-              alt="spotify"
-            />
-          </a>
-          <a href={soundcloud} target="_blank" rel="noreferrer">
-            <img
-              className={styles.link_icon}
-              src={soundcloudIcon}
-              alt="soundcloud"
-            />
-          </a>
+          { spotify ?
+            <a href={spotify} target="_blank" rel="noreferrer">
+              <img
+                className={styles.link_icon}
+                src={spotifyIcon}
+                alt="spotify"
+              />
+            </a>
+            :
+            <span></span>
+          }
+
+          { soundcloud ?
+            <a href={soundcloud} target="_blank" rel="noreferrer">
+              <img
+                className={styles.link_icon}
+                src={soundcloudIcon}
+                alt="soundcloud"
+              />
+            </a>
+            :
+            <span></span>
+          }
+
           <a href={instagram} target="_blank" rel="noreferrer">
             <img
               className={styles.link_icon}
