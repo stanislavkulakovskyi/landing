@@ -2,11 +2,13 @@
 @import '../../../styles/extends.scss';
 
 .container {
-  @extend %flexCenter;
+  // @extend %flexCenter;
 
-  max-width: 95%;
-  padding: 60px 40px 60px 140px;
+  max-width: 100%;
+  height: 100%;
+  
   background: #ffffff59;
+  position: relative;
 
   animation: swipe 0.3s;
 }
@@ -15,6 +17,8 @@
   display: flex;
   max-width: 100%;
   flex-direction: column;
+
+  padding: 60px 40px 60px 140px;
 }
 
 .list {
@@ -24,13 +28,14 @@
   column-gap: 80px;
   row-gap: 40px;
   transition: all 0.3s;
+  max-width: 95%
 }
 
 .title {
   @include font-archivo-900;
 
   font-size: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   transform-origin: top;
   -webkit-transform: scaleY(0.8);
   transform: scaleY(0.8) translateX(-0.3%);

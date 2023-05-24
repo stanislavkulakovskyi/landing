@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 
-// import bgAnimation from "../../../../../assets/lottie/hero_background.json";
+import bgAnimation from "../../../../../assets/lottie/hero_background.json";
 import bgIllustration from "../../../../../assets/images/bg_illustration.png";
 import { PLUS_STYLES_BY_INDEX } from "../../../../../utils/constants/layoutBg";
 
@@ -26,7 +26,7 @@ const Background = () => {
   return (
     <div className={styles.container}>
       <Lottie
-        // animationData={bgAnimation}
+        animationData={bgAnimation}
         className={styles.animation}
         rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
       />
