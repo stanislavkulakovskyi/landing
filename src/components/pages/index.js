@@ -1,3 +1,4 @@
 import Main from "./Main";
+import Artists from "./Artists";
 
-export { Main };
+export { Main, Artists };

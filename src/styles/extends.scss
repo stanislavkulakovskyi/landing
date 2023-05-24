@@ -1,0 +1,49 @@
+%transition01 {
+  transition: all 0.1s;
+}
+
+%transition02 {
+  transition: all 0.2s;
+}
+
+%transition03 {
+  transition: all 0.3s;
+}
+
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%swipeAnimation {
+  @keyframes swipe {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+
+%swipeLeftAnimation {
+  @keyframes swipeLeft {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0%)
+    }
+  }
+}
