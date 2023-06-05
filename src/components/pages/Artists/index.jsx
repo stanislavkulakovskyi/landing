@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import React, { useEffect } from 'react';
+import React from 'react';
 import ArtistCard from '../../blocks/ArtistCard';
 
 import cutmylipsPhoto from '../../../assets/images/artists/cutmylips.webp';

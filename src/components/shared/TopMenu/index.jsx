@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import classNames from "classnames";
 
-import { PUBLIC_ROUTES } from "../../../utils/constants/routes";
 import { getIsRouteActive } from "../../../utils/helpers/navigation";
 
 import burger from "../../../assets/icons/burger_corner.svg";
@@ -36,7 +35,7 @@ const SideMenu = ({ links }) => {
   }, []);
 
   const renderNavigation = () => {
-    return PUBLIC_ROUTES.slice(0, -1).map((route, index, routes) => {
+    return links.slice(0, -1).map((route, index, routes) => {
       const { title, path } = route;
       const isActive = getIsRouteActive(pathname, hash, path);
 

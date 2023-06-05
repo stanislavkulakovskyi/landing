@@ -21,9 +21,7 @@
   overflow: hidden;
 
   transition: all 0.3s;
-
   
-
   @include bp-custom-down(600px) {
     align-items: flex-start;
 
@@ -75,7 +73,6 @@
     flex-direction: column;
     overflow: hidden;
     justify-content: space-around;
-    // height: 220px;
     height: 0px;
     padding: 0;
     opacity: 0;
@@ -100,7 +97,6 @@
   }
 
   @include bp-custom-down(600px) {
-    // height: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,7 +118,7 @@
   font-size: 18px;
   @include font-orditron-400;
   color: $carbon;
-  // transition: all 0.3s;
+  transition: all 0.3s;
   z-index: 9;
   width: max-content;
 
@@ -141,49 +137,7 @@
   }
 
   &_music {
-    // display: inline;
     z-index: 100;
 
-  }
-}
-
-.transitionA {
-  animation-name: animationA;
-  animation-duration: 0.5s;
-  /* Add any other animation properties as needed */
-}
-
-@keyframes animationA {
-  /* Define the keyframes for animationA */
-  0% {
-    /* Initial state */
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    /* Final state */
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Define the animation for transitionB */
-.transitionB {
-  animation-name: animationB;
-  animation-duration: 0.5s;
-  /* Add any other animation properties as needed */
-}
-
-@keyframes animationB {
-  /* Define the keyframes for animationB */
-  0% {
-    /* Initial state */
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    /* Final state */
-    opacity: 1;
-    transform: translateY(0);
   }
 }

@@ -5,7 +5,7 @@
 .container {
   @extend %container;
 
-  // animation: scale 0.3s;
+  animation: scale 0.3s;
   
   @include bp-custom-up(640px) {
     padding-left: 140px;

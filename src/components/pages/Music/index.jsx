@@ -51,16 +51,6 @@ const Music = () => {
             belletriq releases
           </a>
         </div>
-        {/* <iframe
-          className={styles.player}
-          src="https://open.spotify.com/embed/playlist/2HpG3oafC84QrGQ01O47Aq?utm_source=generator&theme=0"
-          width="100%"
-          height="600"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          title="spotify-player"
-          // sandbox="allow-scripts allow-same-origin"
-        /> */}
       </div>
     </div>
   );

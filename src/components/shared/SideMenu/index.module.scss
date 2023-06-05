@@ -30,24 +30,6 @@
     }
   }
 
-  // &_mobile {
-  //   @include bp-tablet {
-  //     position: fixed;
-  //     top: 0;
-  //     left: 0;
-  //     background: #f5f1f030;
-  //     backdrop-filter: blur(40px);
-  //     -webkit-backdrop-filter: blur(40px);
-  //     padding: 40px;
-  //     height: fit-content;
-  //     // min-height: max-content;
-  //     z-index: 5;
-  //     width: 100%;
-  //     flex-direction: row;
-  //     box-shadow: 0px 0px 3px black;
-  //   }
-  // }
-
   @include bp-tablet {
     display: none;
   }
@@ -111,12 +93,12 @@
   animation: swipe 1s;
 
   &__active {
-    // color: $salt;
+    color: $salt;
     @include font-orditron-700;
   }
 
   &:hover {
-    // color: $salt;
+    color: $salt;
     @include font-orditron-700;
   }
 }
