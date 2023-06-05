@@ -1,7 +1,7 @@
 {
-  "name": "btq-landing",
+  "name": "landing",
   "version": "0.1.0",
-  "homepage": "https://stanislavkulakovskyi.github.io/landing",
+  "homepage": "https://stanislavkulakovskyi.github.io/landing/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
