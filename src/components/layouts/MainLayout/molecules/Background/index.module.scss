@@ -1,4 +1,5 @@
 @import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins.scss";
 
 .container {
     position: fixed;
@@ -29,9 +30,18 @@
     z-index: 3;
     top: 0;
     right: 0;
+
+    @include bp-mobile {
+        right: -20%;
+        transform: scale(0.7);
+    }
 }
 
 .plus {
     position: fixed;
     z-index: 3;
+
+    @include bp-mobile {
+        display: none;
+    }
 }
