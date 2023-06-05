@@ -18,7 +18,7 @@ const Navigation = () => {
         <Routes>
           {PUBLIC_ROUTES.map((route) => {
             const { layout: Layout, page: Page, path } = route;
-
+            
             return (
               <Route
                 key={path}

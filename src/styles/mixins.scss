@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
 
 // FONTS
@@ -51,6 +51,7 @@
 @mixin font-fraunces-400 {
   font-family: 'Fraunces', serif;
   font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 @mixin font-fraunces-500 {
@@ -86,4 +87,34 @@
 @mixin square($size) {
   width: $size;
   height: $size;
+}
+
+@mixin bp-mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin bp-tablet {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin bp-desktop {
+  @media screen and (min-width: 1367px) {
+    @content;
+  }
+}
+
+@mixin bp-custom-up($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin bp-custom-down($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
 }
